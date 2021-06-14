@@ -1,5 +1,8 @@
 # Huffman-Codes
 A simple header file that allows you to encode and decode messages using an algorithm that creates a set of Huffman codes out of symbol: probabiliity pairs
+
+#### note that the code is located in the "master" branch
+
 ## Usage
 All that needs to be done is to instantiate an object of type Decoder, given an ifstream initiated with the file of your choice. The file should have the following format:
 
