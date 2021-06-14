@@ -78,6 +78,18 @@ void test_decode()
     pass();
 }
 
+void test_github()
+{
+    ifstream is("english.in");
+    Decoder decoder(is);
+
+    decoder.encode();
+
+    decoder.print();
+
+    decoder.decode(cin, cout);
+}
+
 int main()
 {
 
@@ -85,13 +97,15 @@ int main()
     cout << "==================" << endl;
     cout << endl;
 
-    test_ctor_and_print();
+    //test_ctor_and_print();
 
-    test_encode();
+    //test_encode();
 
-    test_encode_large();
+    //test_encode_large();
 
-    test_decode();
+    //test_decode();
+
+    test_github();
 
     return 0;
 }
