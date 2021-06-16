@@ -39,6 +39,14 @@ public:
         }
     }
 
+    ~Decoder()
+    {
+        if (n.size() == 1)
+        {
+            clean_up(n[0]);
+        }
+    }
+
     // print symbol and probability
     // in same format as input
     void print()
@@ -263,6 +271,19 @@ private:
         print_tree(node->left);
         cout << node->sbl << " " << endl;
         print_tree(node->right);
+    }
+
+    void clean_up(Node *node)
+    {
+        if (!node)
+        {
+            return;
+        }
+        Node *temp_left = node->left;
+        Node *temp_right = node->right;
+        delete node;
+        clean_up(temp_left);
+        clean_up(temp_right);
     }
 };
 

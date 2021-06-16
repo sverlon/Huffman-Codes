@@ -22,6 +22,7 @@ int main()
 
     if (decode_file == "input")
     {
+        decoder.print();
         decoder.decode(cin, cout);
     }
     else
