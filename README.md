@@ -1,5 +1,5 @@
 # Huffman-Codes
-A simple header file that allows you to encode and decode messages using an algorithm that creates a set of Huffman codes out of symbol: probabiliity pairs
+A simple header file that allows you to encode and decode messages using an algorithm that creates a set of Huffman codes out of {symbol: probabiliity} pairs
 
 #### note that the code is located in the "master" branch
 
